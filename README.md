@@ -15,7 +15,7 @@ Using Power BI, I analyzed the relationship between product prices and customer 
 This dataset contains over 1,000 1K+ Amazon Product's Ratings and Reviews as per their details listed on the official website of Amazon.
 
 ![image]()
-
+![Amazon dashboard](Dataset features.png)
 
 
 
