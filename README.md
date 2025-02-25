@@ -24,12 +24,13 @@ This dataset contains 1K+ Amazon Product's Ratings and Reviews as per their deta
 *Transform*:
 > * Imported the data into Power Query for cleaning and preparation.
 > * Changed data types where necessary.
-> * Split a column (specific column name if necessary).
-> * Removed unnecessary columns.
+> * Split and removed unnecessary columns.
 > * Filtered out null values to ensure data integrity.
-> * Added a conditional column to categorize products by category.
+> * Added a conditional column to display products by category for a more coherent analysis.
 
 *Load*: After transformation, the cleaned dataset was loaded into Power BI for further analysis and visualization.
+
+
 
 2. **DAX Measures for Analysis**
    
@@ -48,7 +49,7 @@ Total Reviews = DISTINCTCOUNT('Amazon Sales'[review_id])
 3. **Interactive Features**
    To enhance user experience, I implemented interactive tooltips using the QUESTION Mark and RESET icons to provide contextual insights without overcrowding the dashboard.
 
-![Insights](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Amazon_Review_Insights.png?raw=true)
+![Insights](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Insights-amazon.png?raw=true)
 
 5. **Conclusion**
 ## Business Questions Addressed
