@@ -12,12 +12,9 @@ Using Power BI, I analyzed the relationship between product prices and customer 
 
 ## Dataset Breakdown
 
-This dataset contains over 1,000 1K+ Amazon Product's Ratings and Reviews as per their details listed on the official website of Amazon.
+This dataset contains 1K+ Amazon Product's Ratings and Reviews as per their details listed on the official website of Amazon.
 
-![image]()
-![Amazon dashboard](Dataset features.png)
-
-
+![Dataset_Features](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Dataset%20features.png?raw=true)
 
 ## Approach
 1. **Extract, Transform, and Load (ETL) Process**
@@ -35,19 +32,25 @@ This dataset contains over 1,000 1K+ Amazon Product's Ratings and Reviews as per
 *Load*: After transformation, the cleaned dataset was loaded into Power BI for further analysis and visualization.
 
 2. **DAX Measures for Analysis**
-To enhance the analysis, the following DAX (Data Analysis Expressions) measures were created:
+   
+To enhance the analysis, some simple DAX (Data Analysis Expressions) measures were created:
 
-> * Total Sales = SUM of product prices after discounts.
-> * Average Discount Percentage = (Discount Amount / Actual Price) * 100.
-> * Average Rating per Category = AVERAGE of ratings grouped by product category.
-> * Total Products Sold per Category = COUNT of products within each category.
-
-*A complete list of the DAX measures can be found here*: 
+```DAX
+[Average % Discount ] = AVERAGE('Amazon Sales'[discount_percentage])
+Average Discount = AVERAGE('Amazon Sales'[discounted_price])
+Average Rating = REPT(UNICHAR(9733), AVERAGE('Amazon Sales'[rating])) & REPT(UNICHAR(9734), 5 - AVERAGE('Amazon Sales'[rating]))
+Avg. Product Price = AVERAGE('Amazon Sales'[actual_price])
+Total Product Users = DISTINCTCOUNT('Amazon Sales'[user_name])
+Total Ratings = COUNT('Amazon Sales'[rating])
+Total Reviews = DISTINCTCOUNT('Amazon Sales'[review_id])
+```
 
 3. **Interactive Features**
    To enhance user experience, I implemented interactive tooltips using the QUESTION Mark and RESET icons to provide contextual insights without overcrowding the dashboard.
 
-4. **Conclusion**
+   
+
+5. **Conclusion**
 ## Business Questions Addressed
 This analysis aimed to answer key business questions, including:
 
