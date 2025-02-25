@@ -1,4 +1,4 @@
-# AmazonSalesAnalysis
+# AmazonReviewAnalysis
 
 ![AmazonDashboard](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Amazon_Review_Dashboard.png?raw=true)
 
