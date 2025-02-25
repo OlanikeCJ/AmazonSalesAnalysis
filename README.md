@@ -48,7 +48,7 @@ Total Reviews = DISTINCTCOUNT('Amazon Sales'[review_id])
 3. **Interactive Features**
    To enhance user experience, I implemented interactive tooltips using the QUESTION Mark and RESET icons to provide contextual insights without overcrowding the dashboard.
 
-   
+![Insights](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Amazon_Review_Insights.png?raw=true)
 
 5. **Conclusion**
 ## Business Questions Addressed
