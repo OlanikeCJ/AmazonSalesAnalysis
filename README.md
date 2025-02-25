@@ -1,4 +1,4 @@
-# AmazonReviewAnalysis
+# Amazon_Review_Analysis
 
 ![AmazonDashboard](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Amazon_Review_Dashboard.png?raw=true)
 
@@ -48,29 +48,30 @@ Total Reviews = DISTINCTCOUNT('Amazon Sales'[review_id])
 ```
 
 3. **Interactive Features**
+   
    To enhance user experience, I implemented interactive tooltips using the QUESTION Mark and RESET icons to provide contextual insights without overcrowding the dashboard.
 
 ![Insights](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Insights-amazon.png?raw=true)
 
-5. **Conclusion**
+4. **Conclusion**
 ## Business Insights Generated
 This analysis aimed to generate key business insights, including:
 
-1. Top Performing Products by Rating:
+> 1. Top Performing Products by Rating:
    
-*Identifying the relationship between product price and customer ratings*
+   *Identifying the relationship between product price and customer ratings*
 
-3. Price vs. Rating Analysis:
+> 2. Price vs. Rating Analysis:
    
-*Comparing the relationship between actual price, discounted price, and 
+   *Comparing the relationship between actual price, discounted price, and 
 product rating.*
 
-4. Category Performance:
+> 3. Category Performance:
    
 *Determining which product categories have the highest average rating and the 
 highest number of reviews.*
 
-5. Product Popularity by User Engagement:
+> 4. Product Popularity by User Engagement:
 
 *Identifying the most popular products based on the number of unique users who 
 have reviewed them.*
