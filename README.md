@@ -1,5 +1,7 @@
 # AmazonSalesAnalysis
 
+![AmazonDashboard](
+
 ## Project Description
 
 Amazon is an American Tech Multi-National Company whose business interests include E-commerce, 
@@ -7,12 +9,11 @@ where they buy and store the inventory, and take care of everything from shippin
 service and returns. 
 
 This project explores Amazon product sales data to uncover key insights into pricing, discounts, ratings, and category performance. 
-
-Using Power BI, I analyzed the relationship between product prices and customer ratings, evaluated discount patterns across categories, and identified trends in sales performance. Interactive dashboards provide a clear visualization of these insights, helping businesses understand consumer behavior and optimize pricing strategies.
+Using Power BI, I analyzed the relationship between product prices and customer ratings, evaluated discount patterns across categories, and identified trends in sales performance.
 
 ## Dataset Breakdown
 
-This dataset contains 1K+ Amazon Product's Ratings and Reviews as per their details listed on the official website of Amazon.
+This dataset contains 1K+ Amazon Products' Ratings and Reviews as per their details listed on the official website of Amazon.
 
 ![Dataset_Features](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Dataset%20features.png?raw=true)
 
@@ -30,7 +31,7 @@ This dataset contains 1K+ Amazon Product's Ratings and Reviews as per their deta
 
 *Load*: After transformation, the cleaned dataset was loaded into Power BI for further analysis and visualization.
 
-
+![Clean_dataset](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Cleaned_dataset.png?raw=true)
 
 2. **DAX Measures for Analysis**
    
@@ -52,15 +53,26 @@ Total Reviews = DISTINCTCOUNT('Amazon Sales'[review_id])
 ![Insights](https://github.com/OlanikeCJ/AmazonSalesAnalysis/blob/main/Insights-amazon.png?raw=true)
 
 5. **Conclusion**
-## Business Questions Addressed
-This analysis aimed to answer key business questions, including:
+## Business Insights Generated
+This analysis aimed to generate key business insights, including:
 
-1. Does a higher product price correlate with better customer ratings?
-2. Which product categories receive the highest and lowest customer ratings?
-3. How do discounts vary across different product categories?
-4. Do high-priced products receive higher discount percentages?
-5. Which product category generates the highest revenue?
+1. Top Performing Products by Rating:
+   
+*Identifying the relationship between product price and customer ratings*
 
+3. Price vs. Rating Analysis:
+   
+*Comparing the relationship between actual price, discounted price, and 
+product rating.*
 
+4. Category Performance:
+   
+*Determining which product categories have the highest average rating and the 
+highest number of reviews.*
+
+5. Product Popularity by User Engagement:
+
+*Identifying the most popular products based on the number of unique users who 
+have reviewed them.*
 
 
